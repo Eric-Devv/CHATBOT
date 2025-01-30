@@ -6,7 +6,7 @@ const chatbotCloseBtn = document.querySelector(".close-btn");
 
 let userMessage;
 
-const API_KEY = "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";
+const API_KEY = "";
 const inputInitHeight = chatInput.scrollHeight;
 const createChatLi = (message, className) => {
     // create a chat <li> element with passed message and className
