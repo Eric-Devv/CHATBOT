@@ -53,7 +53,7 @@ const generateResponse = (incomingChatLi) => {
             console.error("Error:", error);
             messageElement.classList.add("error");
             messageElement.textContent =
-                "Oops! Something went wrong. Please try again.";
+                "Oops! Something went wrong. Please try again. Also not to forget that the program is under maintenance";
         })
         .finally(() => {
             chatbox.scrollTo({ top: chatbox.scrollHeight, behavior: "smooth" });
@@ -75,7 +75,7 @@ const handleChat = () => {
 
     // Display "Thinking..." message while waiting for the response
     setTimeout(() => {
-        const incomingChatLi = createChatLi("Thinking...", "incoming");
+        const incomingChatLi = createChatLi("Encoding...", "incoming");
         chatbox.appendChild(incomingChatLi);
         chatbox.scrollTo({ top: chatbox.scrollHeight, behavior: "smooth" });
         generateResponse(incomingChatLi);
